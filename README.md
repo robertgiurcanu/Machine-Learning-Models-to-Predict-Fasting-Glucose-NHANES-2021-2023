@@ -13,20 +13,25 @@ This projects goal is to compare model performance and understand which features
 
 ## Data
 
-- Demographics: Age, Sex (`DEMO_L.XPT`)  
-- Glucose & Biomarkers: Fasting glucose (`GLU_L.XPT`), HbA1c (`GHB_L.XPT`)  
-- Dietary Intake: Calories, Protein, Carbs, Sugar, Fiber, Fats, Cholesterol, Sodium, Potassium (`DR1TOT_L.XPT`)  
-- Body Measures: BMI, Waist circumference (`BMX_L.XPT`)  
-- Diabetes Status: Diabetes diagnosis (`DIQ_L.XPT`)  
+- Demographics: Age, Sex (DEMO_L.XPT)  
+- Glucose & Biomarkers: Fasting glucose (GLU_L.XPT), HbA1c (GHB_L.XPT)  
+- Dietary Intake: Calories, Protein, Carbs, Sugar, Fiber, Fats, Cholesterol, Sodium, Potassium (DR1TOT_L.XPT)  
+- Body Measures: BMI, Waist circumference (BMX_L.XPT)  
+- Diabetes Status: Diabetes diagnosis (DIQ_L.XPT)  
 
 ## Results
 
-| Metric | Linear Regression | Random Forest |
-|--------|-----------------|---------------|
-| R² | 0.33 | 0.36 |
-| MSE | 773 | 731 |
-| Clinical Accuracy (within 10%) | 68% | 66% |
-| Clinical Accuracy (within 15%) | 81% | 79% |
+**Linear Regression**  
+R²: 0.33    
+MSE: 773  
+Clinical Accuracy (within 10%): 68%  
+Clinical Accuracy (within 15%): 81%  
+
+**Random Forest**  
+R²: 0.36  
+MSE: 731  
+Clinical Accuracy (within 10%): 66%  
+Clinical Accuracy (within 15%): 79%  
 
 Features:  
 Diabetes status, waist circumference, and age were the strongest predictors in both models. Other variables, like calories, sex, and prediabetes status, were of less influence.
